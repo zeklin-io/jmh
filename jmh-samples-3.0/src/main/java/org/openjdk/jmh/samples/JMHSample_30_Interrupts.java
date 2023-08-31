@@ -114,7 +114,7 @@ public class JMHSample_30_Interrupts {
                 .include(JMHSample_30_Interrupts.class.getSimpleName())
                 .threads(2)
                 .forks(5)
-                .timeout(TimeValue.seconds(10))
+                .timeout(TimeValue.seconds(2))
                 .build();
 
         new Runner(opt).run();
