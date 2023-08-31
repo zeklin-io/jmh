@@ -30,6 +30,10 @@ questions.
     <groupId>org.openjdk.jmh</groupId>
     <artifactId>jmh-parent</artifactId>
     <packaging>pom</packaging>
+    <properties>
+        <maven.compiler.source>17</maven.compiler.source>
+        <maven.compiler.target>17</maven.compiler.target>
+    </properties>
     <version>1.38-SNAPSHOT</version>
     <name>Java Microbenchmark Harness Parent</name>
 
@@ -296,7 +300,11 @@ questions.
         <module>jmh-core-it</module>
         <module>jmh-core-ct</module>
         <module>jmh-core-benchmarks</module>
-        <module>jmh-samples</module>
+        <module>jmh-samples-0</module>
+        <module>jmh-samples-1</module>
+        <module>jmh-samples-2</module>
+        <module>jmh-samples-3.0</module>
+        <module>jmh-samples-3.1</module>
         <module>jmh-generator-annprocess</module>
         <module>jmh-generator-asm</module>
         <module>jmh-generator-bytecode</module>
